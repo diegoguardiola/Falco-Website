@@ -3,7 +3,7 @@ import Gear from '../../components/Rotating Gear/gear';
 
 export default function About() {
   return (
-    <div>
+    <div className='about'>
       <Gear />
     </div>
   );
