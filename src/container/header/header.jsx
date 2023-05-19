@@ -37,6 +37,7 @@ export default function Header() {
           <div>
               <img src={images.img3} alt='tech and robotic arm'/>
           </div>
+          <Carousel.Caption>
           <h1>Who We Serve</h1>
             <ul>
               <li>Pharmaceutical & Biotech</li>
@@ -45,6 +46,8 @@ export default function Header() {
               <li>Automotive</li>
               <li>Pulp & paper</li>
             </ul>
+          </Carousel.Caption>
+
         </Carousel.Item>
         <Carousel.Item>
           <div>
