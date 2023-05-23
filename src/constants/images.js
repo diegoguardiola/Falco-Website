@@ -4,6 +4,9 @@ import img3 from '../assets/images/img3.jpg'
 import img4 from '../assets/images/img4.jpg'
 import logo from '../assets/images/logo.png'
 import gear from '../assets/images/gear.png'
+import satisfaction from '../assets/images/satisfaction.png'
+import community from '../assets/images/community.png'
+import transparency from '../assets/images/transparency.png'
 
 export default {
     img1, 
@@ -12,4 +15,7 @@ export default {
     img4,
     logo,
     gear,
+    satisfaction,
+    community,
+    transparency
 }

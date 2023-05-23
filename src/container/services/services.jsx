@@ -1,9 +1,9 @@
 import React from 'react';
 import Gear from '../../components/Rotating Gear/gear';
 
-export default function About() {
+export default function Services() {
   return (
-    <div className='about'>
+    <div className='services'>
       <Gear />
     </div>
   );
