@@ -1,0 +1,23 @@
+.footer-wrapper {
+  background-color: rgb(102, 99, 99);
+}
+
+.our-values {
+    display: flex;
+    justify-content: space-between;
+    gap: -20px; // Adjust this value to control the space between images
+  
+    .value1,
+    .value2,
+    .value3 {
+      flex: 1;
+      text-align: center;
+  
+      img {
+        width: 100%;
+        max-width: 200px; // Or the size you want your images to be
+        height: auto;
+      }
+    }
+  }
+  
