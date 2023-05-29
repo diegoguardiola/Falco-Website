@@ -169,12 +169,12 @@ const Gear = () => {
   };
 
   return (
-    <div className="wrapper">
-      <div className="circle-container">
-        <img src={images.gear} alt="gear" className="gear-img" />
-        {renderItems()}
-      </div>
-      {activeItem !== null && <div className="circle-text">{customMessage}</div>}
+    <div className="wrapper" >
+        <div className="circle-container">
+          <img src={images.gear} alt="gear" className="gear-img" />
+          {renderItems()}
+        </div>
+        {activeItem !== null && <div className="circle-text">{customMessage}</div>}
     </div>
   );
 };

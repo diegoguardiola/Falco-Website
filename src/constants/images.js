@@ -7,6 +7,7 @@ import gear from '../assets/images/gear.png'
 import satisfaction from '../assets/images/satisfaction.png'
 import community from '../assets/images/community.png'
 import transparency from '../assets/images/transparency.png'
+import about_background from '../assets/images/about_background.jpg'
 
 export default {
     img1, 
@@ -17,5 +18,6 @@ export default {
     gear,
     satisfaction,
     community,
-    transparency
+    transparency,
+    about_background
 }

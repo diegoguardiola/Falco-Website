@@ -43,47 +43,50 @@ const handleSubmit = () => {
 
   return (
     <>
-      <h2 className="head-text">Contact Us</h2>
-      <div className="app__footer-cards">
-        <div className="app__footer-card ">
+      <div className="app_contact-wrapper">
+        <h2 className="head-text">Contact Us</h2>
+        <div className="app__footer-cards">
+          <div className="app__footer-card ">
 
-          <a href="mailto:diegoguardiola01@gmail.com" className="p-text">My Email</a>
-        </div>
-        <div className="app__footer-card">
+            <a href="mailto:diegoguardiola01@gmail.com" className="p-text">My Email</a>
+          </div>
+          <div className="app__footer-card">
 
-          <a href="tel:+1 (925) 997-9490" className="p-text">My Phone</a>
+            <a href="tel:+1 (925) 997-9490" className="p-text">My Phone</a>
+          </div>
         </div>
-      </div>
-      {!isFormSubmitted ? (
-        <div className="app__footer-form app__flex">
-          <div className="app__flex">
-            <input style={{backgroundColor: '#fff'}} className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+        {!isFormSubmitted ? (
+          <div className="app__footer-form app__flex">
+            <div className="app__flex">
+              <input style={{backgroundColor: '#fff'}} className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+            </div>
+            <div className="app__flex">
+              <input style={{backgroundColor: '#fff'}} className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+            </div>
+            <div>
+              <textarea
+                style={{backgroundColor: '#fff'}}
+                className="p-text"
+                placeholder="Your Message"
+                value={message}
+                name="message"
+                onChange={handleChangeInput}
+              />
+            </div>
+            <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
           </div>
-          <div className="app__flex">
-            <input style={{backgroundColor: '#fff'}} className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
-          </div>
+        ) : (
           <div>
-            <textarea
-              style={{backgroundColor: '#fff'}}
-              className="p-text"
-              placeholder="Your Message"
-              value={message}
-              name="message"
-              onChange={handleChangeInput}
-            />
+            <h3 className="head-text">
+              Thank you for getting in touch!
+            </h3>
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+        )}
+        <div className="app__footer-map">
+          
         </div>
-      ) : (
-        <div>
-          <h3 className="head-text">
-            Thank you for getting in touch!
-          </h3>
-        </div>
-      )}
-      <div className="app__footer-map">
-        
-      </div>
+    </div>
+      
     </>
   )
 }

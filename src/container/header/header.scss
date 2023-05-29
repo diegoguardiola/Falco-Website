@@ -5,14 +5,32 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    img {
+    
+    .image-box {
+      position: relative;
+      img {
         width: auto;
-        height: 875px;
+        height: 975px;
         object-fit: contain;
+      }
+  
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.496), rgba(255, 255, 255, 0) 50%);
+      }
     }
+  
     @media screen and (max-width: 1200px) {
+      .image-box {
         img {
-            height: 400px;
+          height: 400px;
         }
+      }
     }
-}
+  }
+  

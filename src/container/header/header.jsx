@@ -8,19 +8,24 @@ export default function Header() {
   return (
 
   <div className='image-wrapper'>
-    <Carousel>
-      <Carousel.Item>
-        <div>
+    <Carousel >
+      <Carousel.Item interval={4000}>
+        <div className='image-box'> 
             <img src={images.img1} alt='automation assembly line'/>
         </div>
         <Carousel.Caption>
-          <h1>What We Do</h1>
-          <p>We provide high-quality and cutting-edge solutions in automation. Whether it’s simple instruments or fully automated manufacturing lines, we have the solution for you. 
-            From conceptualization to implementation – We are here for you every step of the way.</p>
+          <div className='caption-box'>
+            <h1>What We Do</h1>
+            <p>
+              We provide high-quality and cutting-edge solutions in automation. Whether it’s simple instruments or fully 
+              automated manufacturing lines, we have the solution for you. From conceptualization to implementation – We 
+              are here for you every step of the way.
+            </p>
+          </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-          <div>
+      <Carousel.Item interval={4000}>
+          <div className='image-box'>
               <img src={images.img2} alt='bottle automation'/>
           </div>
           <Carousel.Caption>
@@ -33,8 +38,8 @@ export default function Header() {
             </ul>
           </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-          <div>
+      <Carousel.Item interval={4000}>
+          <div className='image-box'>
               <img src={images.img3} alt='tech and robotic arm'/>
           </div>
           <Carousel.Caption>
@@ -49,8 +54,8 @@ export default function Header() {
           </Carousel.Caption>
 
         </Carousel.Item>
-        <Carousel.Item>
-          <div>
+        <Carousel.Item interval={4000}>
+          <div className='image-box'>
               <img src={images.img4} alt='welder welding'/>
           </div>
           <Carousel.Caption>
