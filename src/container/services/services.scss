@@ -1,7 +1,7 @@
 .wrapper {
     background-image: url('../../assets/images/about_background.jpg');
     width: 100%;
-    height: 900px;
+    height: 90vh;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -102,28 +102,39 @@
     }
   }
   
-.about-us{
-  list-style: none;
-  color: aliceblue;
-}
-  
   
 .circle-text {
+  color: aliceblue;
   margin-left: 110px;
   margin-right: 100px;
-  margin-top: 80px;
-  height: 90vh; 
+  align-self: center;
+  height: 70vh; 
   width: 100vh; 
   border: 2px solid aliceblue;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  .Industrial-Automation{
+  .Industrial-Automation, .Field-Service, .Engineering-OEM, .Building-Automation, .Calibration{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
     h3{
       font-size: 30px;
       font-weight: bold;
     }
     p{
+      font-size: 16px;
+    }
+  }
+  .Validation-Documentation{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    h3{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    ul {
+      list-style-type: disc;
       font-size: 18px;
     }
   }
@@ -131,6 +142,10 @@
 }
 
 .default_message {
+  margin-top: 45%;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
   h1 {
     font-size: 80px;
     font-weight: bold;

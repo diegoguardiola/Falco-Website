@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './about.scss';
 import { images } from '../../constants';
+import MapLocation from '../../components/map';
 
 const About = () => {
   const [active, setActive] = useState(false);
@@ -12,7 +13,7 @@ const About = () => {
   };
 
   return (
-      <div>
+      <div className='about-container'>    
         <h1>About Us</h1>
         <div className='our-values'>
             <div className='value1'>
@@ -42,6 +43,9 @@ const About = () => {
                 We observe the highest standards for all of our clients, employees, and other stakeholders. We offer high-quality products and services and measure our success in terms of our clients’ satisfaction. We are dedicated to supporting you and your business wherever it takes you.
                 </p>
             </div>
+        </div>
+        <div className='Map'>
+            <MapLocation />
         </div>
       </div>
   );

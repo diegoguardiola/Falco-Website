@@ -7,7 +7,7 @@ const Services = () => {
   const [customMessage, setCustomMessage] = useState(
       <div className='default_message'>
         <h1>
-          What we can do for you?
+          What Can We Do For You?
         </h1>
       </div>
   );
@@ -38,7 +38,7 @@ const Services = () => {
       case 1:
         setCustomMessage(
           <div className='Validation-Documentation'>
-            <ul className='about-us'>
+            <ul>
               <h3>
                 Validation Documentation
               </h3>
@@ -52,14 +52,14 @@ const Services = () => {
               <li>OEM Manuals</li>
               <li>Data Reporting & Database Integration</li>
             </ul>
-            <ul className='about-us'>
+            <ul>
               <h3>
                 Project Documentation
               </h3>
               <li>Project Gantt Charts</li>
               <li>Project Action Items Lists</li>
             </ul>
-            <ul className='about-us'>
+            <ul>
               <h3>
               Testing & Qualification
               </h3>
@@ -144,11 +144,7 @@ const Services = () => {
               break;
       default:
         setCustomMessage(
-          <div className='default_message'>
-            <h1>
-              What we can do for you?
-            </h1>
-          </div>
+
           );
     }
   };

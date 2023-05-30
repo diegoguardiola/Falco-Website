@@ -13,6 +13,7 @@ function App() {
   const ref = useRef();
   return (
     <div className='app'>
+    <Navbar />
       <Parallax pages={5}>
 
         <ParallaxLayer offset={0} speed={0}>
@@ -22,21 +23,15 @@ function App() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={.999} speed={0.5}>
-          <div className="full-height">
               <Services />
-          </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.60} speed={0.5}>
-          <div className="full-height">
+        <ParallaxLayer offset={1.40} speed={0.5}>
               <About />
-          </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.30} speed={0.5}>
-          <div className="full-height">
+        <ParallaxLayer offset={2.8} speed={0.5}>
               <Contact />
-          </div>
         </ParallaxLayer>
 
         <ParallaxLayer offset={3.0} speed={0.5}>
